@@ -5,8 +5,8 @@
 List<string> HungryList = new List<string>()!;
 
 // Enkel konsolutskrivning
-Console.WriteLine("Välkommen till din hungrig/shopping -lista!");
-Console.WriteLine("Skriv in produkter du vill lägga till som gör dig hungrig. Du kan skriva mätt eller klar om du vill avsluta och se listan. \n");
+Console.WriteLine("Välkommen till din hungrig/shopping -lista! \n");
+Console.WriteLine("Skriv in produkter du vill lägga till som gör dig hungrig.\nDu kan skriva mätt eller klar om du vill avsluta och se listan.\n");
 
 // Loopar igenom tills avslutningsord är skrivet
 while (true)
