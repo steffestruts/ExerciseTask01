@@ -23,7 +23,7 @@ while (true)
     }
     // Lägger till i listan
     HungryList.Add(HungryItem);
-    Console.Write("Tillagd! ");
+    Console.WriteLine("Tillagd! \n");
 }
 
 // Skriver ut listan efter användaren har skrivit avslutningsord
