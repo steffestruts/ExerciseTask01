@@ -1,32 +1,36 @@
 ﻿using System.Collections.Generic;
 
-List<string> ShoppingList = new List<string>();
+/* 50/50 på Chatgpt-kod */
 
-Console.WriteLine("Välkommen till din shopping/hungrig -lista!");
-Console.WriteLine("Skriv in produkter du vill lägga till som gör dig hungrig. Du kan skriva mätt när du vill avsluta och se listan. \n");
+List<string> HungryList = new List<string>()!;
 
+// Enkel konsolutskrivning
+Console.WriteLine("Välkommen till din hungrig/shopping -lista!");
+Console.WriteLine("Skriv in produkter du vill lägga till som gör dig hungrig. Du kan skriva mätt eller klar om du vill avsluta och se listan. \n");
+
+// Loopar igenom tills avslutningsord är skrivet
 while (true)
 {
+    // Uppmanar användaren att skriva produkter till listan
     Console.Write("Skriv in varor som kurrar i magen:");
-    string shoppingItem = Console.ReadLine();
+    string HungryItem = Console.ReadLine()!;
 
-    // Om användaren skriver 'klar', avsluta inmatningen
-    if (shoppingItem.ToLower() == "mätt" || shoppingItem.ToLower() == "klar")
+    // Skriver användaren "mätt" eller "klar" visas färdiga listan och sen avslutas inmatningen
+    if (HungryItem.ToLower() == "mätt" || HungryItem.ToLower() == "klar") 
     {
         Console.WriteLine("\n");
         break;
     }
 
-    ShoppingList.Add(shoppingItem);
+    // Lägger till i listan
+    HungryList.Add(HungryItem);
 }
 
-
-Console.WriteLine("Shopping/Hungrig -lista som du har skrivit:");
-foreach (var Shopping in ShoppingList)
+// Skriver ut listan efter användaren har skrivit avslutningsord
+Console.WriteLine("Hungrig/Shopping -listan som du har skrivit:");
+foreach (var Hungry in HungryList)
 {
-    Console.WriteLine("- " + Shopping);
+    Console.WriteLine("- " + Hungry);
 }
 
 Console.ReadKey();
-
-/* 50/50 på Chatgpt-kod */
