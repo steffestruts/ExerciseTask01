@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-/* 50/50 på Chatgpt-kod */
+/* "50/50" på Chatgpt-kod */
 
 List<string> HungryList = new List<string>()!;
 
@@ -32,6 +32,6 @@ foreach (var Hungry in HungryList)
 {
     Console.WriteLine("- " + Hungry);
 }
-Console.WriteLine("\nTack för du använder Hungrig3000!");
+Console.WriteLine("\nTack för du använder Hungrig3000! Nu blev jag hungrig. (^o^)");
 
 Console.ReadKey();
