@@ -12,26 +12,28 @@ Console.WriteLine("Skriv in produkter du vill lägga till som gör mig eller dig
 while (true)
 {
     // Uppmanar användaren att skriva produkter till listan
-    Console.Write("Skriv in varor som kurrar i magen:");
+    Console.Write("Skriv in varor som kurrar i magen: ");
     string HungryItem = Console.ReadLine()!;
 
     // Skriver användaren "mätt" eller "klar" visas färdiga listan och sen avslutas inmatningen
     if (HungryItem.ToLower() == "mätt" || HungryItem.ToLower() == "klar") 
     {
-        Console.WriteLine("\n");
         break;
     }
-    // Lägger till i listan
-    HungryList.Add(HungryItem);
-    Console.WriteLine("Tillagd! \n");
+    else
+    {
+        // Lägger till i listan
+        HungryList.Add(HungryItem);
+        Console.WriteLine($"{HungryItem} är tillagd! \n");
+    }
 }
 
 // Skriver ut listan efter användaren har skrivit avslutningsord
-Console.WriteLine("Färdiga listan:");
+Console.Clear();
+Console.WriteLine("Din lista är nu skapad! Tack för du använder Hungrig3000! Nu blev jag hungrig. (^o^)\n");
 foreach (var Hungry in HungryList)
 {
     Console.WriteLine("- " + Hungry);
 }
-Console.WriteLine("\nTack för du använder Hungrig3000! Nu blev jag hungrig. (^o^)");
 
 Console.ReadKey();
